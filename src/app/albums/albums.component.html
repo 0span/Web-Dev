@@ -1,0 +1,14 @@
+<h1>albums</h1>
+
+<fieldset>
+<!--    <input type="text" [(ngModel)]="newAlbum.id"><br/>-->
+    <textarea [(ngModel)]="newAlbum.title"></textarea><br/>
+    <button (click)="addAlbum()">Add album</button>
+</fieldset>
+
+<div *ngFor="let album of albums">
+    <a routerLink="/albums/{{album.id}}">
+       {{album.id}})  {{album.title}}
+    </a>
+    <button (click)="deleteAlbum(album)">delete</button>
+</div>

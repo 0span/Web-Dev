@@ -1,0 +1,15 @@
+<button type= "radio"  (click)="getRating(1)">1</button>
+<button type= "radio"(click)="getRating(2)">2</button>
+<button type= "radio"(click)="getRating(3)">3</button>
+<button type= "radio"(click)="getRating(4)">4</button>
+<button type= "radio"(click)="getRating(5)">5</button>
+<p>Total Rating: {{getSum()}}</p>
+
+<a>
+    <img src="https://cdn-icons-png.flaticon.com/128/8539/8539507.png" (click)="getLike()">
+</a>
+
+<div>
+    {{this.likes}}
+
+</div>

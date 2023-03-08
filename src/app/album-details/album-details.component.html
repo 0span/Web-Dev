@@ -1,0 +1,14 @@
+<h2>album-details</h2>
+
+<fieldset>
+    <textarea [(ngModel)]="this.newTitle"></textarea><br/>
+    <button (click)="changeAlbum()">Change title</button>
+</fieldset>
+<div *ngIf="album">
+    <h3>{{album.id}}</h3>
+
+    <p>{{album.title}}</p>
+    <a routerLink="/albums/{{album.id}}/photos">photos</a>
+
+</div>
+

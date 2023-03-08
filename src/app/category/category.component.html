@@ -1,0 +1,6 @@
+<div class="categories">
+    <div class="categories" *ngFor="let category of categories">
+        <a class = "category"[routerLink]="['/category', category.name]"   (click)="getCategory.emit(category.name)">{{category.name}} </a>
+    </div>
+</div>
+

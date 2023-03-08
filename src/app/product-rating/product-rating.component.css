@@ -1,0 +1,9 @@
+button[type="radio"]{
+    border: none;
+}
+img{
+    width: 5%;
+}
+img:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,6 @@
+.categories{
+    margin-left: 10px;
+    display: grid;
+    grid-template-rows: auto auto;
+
+}
